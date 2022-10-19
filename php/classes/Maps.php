@@ -17,7 +17,7 @@ class Maps {
     public function getLatLong() {
         $passStmt = (new Connection)->connect()->prepare("SELECT coordLong, coordLat FROM coordinates");
         $passStmt -> execute();
-        return $passStmt -> fetch();
+        return $passStmt -> fetchAll();
         $passStmt = null;
     }
 
