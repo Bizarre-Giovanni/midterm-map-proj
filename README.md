@@ -17,3 +17,4 @@
     
 **Considerations**
 - [ ] **Better UI**
+- [ ] **Transition to AJAX for parity**
