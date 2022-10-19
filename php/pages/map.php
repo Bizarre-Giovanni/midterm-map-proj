@@ -126,7 +126,7 @@
                 <!-- BASED ON PROVIDED SAMPLE CODE FROM OOP_STUDENT -->
                 <div class="p-3 mx-auto flex-column">
                 <div class="table-responsive table-bordered" style="overflow-y: auto; max-height: 300px;min-height: 300px;">
-                <table class="table mx-auto w-auto search-table text-light text-center" tabindex='0' id="studentListing">
+                <table class="table mx-auto w-auto search-table text-light text-center" tabindex='0' id="coordListing">
                   <thead>
                     <tr>
                       <th class="table_head_left_fixed" style="border: 1px solid white;background-color: #323333;width:275px;">Longitude</th>
