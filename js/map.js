@@ -15,6 +15,5 @@ for (let i = 0; i < 1; i++) {
 
 for (let i = 0; i < dArrayLatLong.length; i++) {
     L.marker(dArrayLatLong[i]).addTo(map)
-            .bindPopup('<b>Hello World</b>')
-            .openPopup();
+            .bindPopup('<b>Hello World</b>');
 }
