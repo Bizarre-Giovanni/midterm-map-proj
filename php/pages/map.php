@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link link-dark">
+                    <a href="./addclient.php" class="nav-link link-dark">
                     <svg class="bi pe-none me-2" width="16" height="16" fill="Black"><use xlink:href="#userAddIcon"/></svg>
                     Add Client
                     </a>

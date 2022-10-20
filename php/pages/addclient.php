@@ -13,7 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link href="./css/main.css" rel="stylesheet">
+        <link href="../../css/main.css" rel="stylesheet">
 
     </head>
 
@@ -52,19 +52,19 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="./index.php" class="nav-link active" aria-current="page">
+                <a href="../../index.php" class="nav-link link-dark">
                 <svg class="bi pe-none me-2" width="16" height="16" fill="Black"><use xlink:href="#homeIcon"/></svg>
                 Home
                 </a>
             </li>
             <li>
-                <a href="./php/pages/map.php" class="nav-link link-dark">
+                <a href="./map.php" class="nav-link link-dark">
                 <svg class="bi pe-none me-2" width="16" height="16" fill="Black"><use xlink:href="#mapIcon"/></svg>
                 Map
                 </a>
             </li>
             <li>
-                <a href="./php/pages/addclient.php" class="nav-link link-dark">
+                <a href="./addclient.php" class="nav-link active" aria-current="page">
                 <svg class="bi pe-none me-2" width="16" height="16" fill="Black"><use xlink:href="#userAddIcon"/></svg>
                 Add Client
                 </a>
