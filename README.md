@@ -14,7 +14,7 @@
     - [ ] Guest Experience
     - [ ] Client Experience
     - [ ] Administrator Experience
+4. **Transition to AJAX for parity**
     
 **Considerations**
 - [ ] **Better UI**
-- [ ] **Transition to AJAX for parity**
