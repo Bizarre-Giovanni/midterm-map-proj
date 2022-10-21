@@ -1,10 +1,11 @@
 var dArrayLatLong = [];
 console.log(arrayLatLong);
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < arrayLatLong.length; i++) {
     dArrayLatLong[i] = [];
     
-    dArrayLatLong[i][0] = arrayLatLong[i].coordLong;
-    dArrayLatLong[i][1] = arrayLatLong[i].coordLat;
+    for (let j = 0; j < 2; j++) {
+        dArrayLatLong[i][j] = arrayLatLong[i][j];
+    }
 }
 
 var map = L.map('map').setView(dArrayLatLong[0], 17);
