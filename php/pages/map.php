@@ -55,8 +55,9 @@
 
     <main class="d-flex flex-nowrap">
         <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh;">
-            <img src="../../assets/imgs/icons/Book and Quill.png" class="bi pe-none me-2" width="40" height="32"></img>
-                <span class="fs-4">Sidebar</span>
+            <a href="#" class="d-flex align-items-center mb2 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="../../assets/imgs/icons/Book and Quill.png" class="bi pe-none me-2" width="40" height="32"></img>
+                    <span class="fs-4">Sidebar</span>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
