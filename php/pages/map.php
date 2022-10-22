@@ -164,7 +164,7 @@
                                 <th class="table_head_left_fixed"
                                     style="border: 1px solid white;background-color: #323333;width:275px;">Latitude</th>
                                 <th class="table_head_left_fixed"
-                                    style="border: 1px solid white;background-color: #323333;width:275px;">Details</th>
+                                    style="border: 1px solid white;background-color: #323333;width:275px;">Address</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -174,7 +174,7 @@
                             echo '<tr idCoord='.$value["id"].'>
                                   <td>'.$value["coordLong"].'</td>
                                   <td>'.$value["coordLat"].'</td>
-                                  <td>'.$value["detail"].'</td>
+                                  <td>'.$value["address"].'</td>
                                 </tr>';
                         }
                     ?>

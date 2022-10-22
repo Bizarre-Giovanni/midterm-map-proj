@@ -8,21 +8,21 @@ class Maps {
     private $lat; 
 
     public function showCoordList(){
-		$passStmt = (new Connection)->connect()->prepare("SELECT * FROM coordinates ORDER BY detail");
+		$passStmt = (new Connection)->connect()->prepare("SELECT id, coordLong, coordLat, address FROM client ORDER BY address");
 		$passStmt -> execute();
 		return $passStmt -> fetchAll();
 		$passStmt = null;
 	}
 
     public function getLatLong() {
-        $passStmt = (new Connection)->connect()->prepare("SELECT coordLong, coordLat FROM coordinates");
+        $passStmt = (new Connection)->connect()->prepare("SELECT coordLong, coordLat FROM client");
         $passStmt -> execute();
         return $passStmt -> fetchAll();
         $passStmt = null;
     }
 
     public function getCoordInfo($item, $value) {
-        $passStmt = (new Connection)->connect()->prepare("SELECT * FROM coordinates where $item = :$item");
+        $passStmt = (new Connection)->connect()->prepare("SELECT * FROM client where $item = :$item");
         $passStmt->bindParam(":".$item, $value, PDO::PARAM_INT);
         $passStmt->execute();
         return $passStmt->fetch();
