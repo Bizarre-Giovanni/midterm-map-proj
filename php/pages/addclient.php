@@ -124,6 +124,27 @@
                 </ul>
             </div>
         </div>
+        
+        <form method="post">
+        <div class="row">
+				<div class="col-md-12 ms-3 mt-4">
+					<div class="row mb-3">
+						<div class="col-sm-5">
+							<label for="fName" class="form-label">First Name</label>
+							<input type="text" class="form-control" id="fName">
+						</div>
+							<div class="col-sm-5">
+							<label for="lName" class="form-label">Last Name</label>
+							<input type="text" class="form-control" id="lName">
+						</div>
+							<div class="col-sm-2 text-center">
+							<label for="mi" class="form-label">MI</label>
+							<input type="text" class="form-control" id="mi">
+						</div>
+				</div>
+		</form>
+				</div>
+            </div>
     </main>
 </body>
 
