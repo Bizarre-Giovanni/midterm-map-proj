@@ -18,8 +18,20 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+    <!-- JS -->
+    <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+
     <!-- CSS -->
     <link href="../../css/main.css" rel="stylesheet">
+
+    <!-- PHP Init -->
+    <?php require_once '../classes/AddClient.php'; ?>
 
 </head>
 
@@ -58,8 +70,7 @@
     <main class="d-flex flex-nowrap">
         <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh">
             <a href="#" class="d-flex align-items-center mb2 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <img src="../../assets/imgs/icons/FullBook.png" class="bi pe-none me-2" width="40"
-                    height="32"></img>
+                <img src="../../assets/imgs/icons/FullBook.png" class="bi pe-none me-2" width="40" height="32"></img>
                 <span class="fs-4">Sidebar</span>
             </a>
             <hr>
@@ -124,27 +135,57 @@
                 </ul>
             </div>
         </div>
-        
-        <form method="post">
+
+
         <div class="row">
-				<div class="col-md-12 ms-3 mt-4">
-					<div class="row mb-3">
-						<div class="col-sm-5">
-							<label for="fName" class="form-label">First Name</label>
-							<input type="text" class="form-control" id="fName">
-						</div>
-							<div class="col-sm-5">
-							<label for="lName" class="form-label">Last Name</label>
-							<input type="text" class="form-control" id="lName">
-						</div>
-							<div class="col-sm-2 text-center">
-							<label for="mi" class="form-label">MI</label>
-							<input type="text" class="form-control" id="mi">
-						</div>
-				</div>
-		</form>
-				</div>
+            <div class="d-flex flex-column ms-3 mt-4 text-light">
+                <form role="form" method="POST">
+                    <div class="row mb-3">
+                        <div class="col-sm-5">
+                            <label for="fName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="fName" name="fName" required>
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="lName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lName" name="lName" required>
+                        </div>
+                        <div class="col-sm-1 text-center">
+                            <label for="mi" class="form-label">MI</label>
+                            <input type="text" class="form-control" id="mi" name="mi" required>
+                        </div>
+                    <div class="row mb-3 mt-3">
+                        <div class="col-sm-4">
+                            <label for="coname" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" id="coName" name="coName">
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="address" class="form-label">Address Detail</label>
+                            <input type="text" class="form-control" id="address" name="address">
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-3">
+                        <div class="col-md-11">
+                            <div class="mb-3">Set Your Address Here: </div>
+                            <div id="addClientMap"></div>
+                            <input type="text" id="coordLong" name="coordLong" required>
+                            <input type="text" id="coordLat" name="coordLat" required>
+                            <script src="../../js/addclient.js"></script>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-3">
+                        <div class="col-sm-3 offset-md-10">
+                            <input type="submit" class="btn btn-primary" value="Add Client">
+                        </div>
+                    </div>
+                </form>
+                <?php
+                    $addClient = new AddClient();
+                    $addClient->addClient();
+                ?>
             </div>
+
+        </div>
+        </div>
     </main>
 </body>
 
